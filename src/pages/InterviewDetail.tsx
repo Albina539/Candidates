@@ -279,7 +279,7 @@ const InterviewDetails: React.FC = () => {
       <div className="left-panel-interview">
         <div className="user-interview">
           <div className="avatar">
-            <img src="/user.png" alt="avatar" />
+            <img src={`${process.env.PUBLIC_URL}/user.png`} alt="avatar" />
           </div>
           <div className="user-greeting-interview">
             <p>Добро пожаловать!</p>

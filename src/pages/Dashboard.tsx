@@ -94,7 +94,7 @@ const Dashboard: React.FC = () => {
       <div className="left-panel">
         <div className="user">
           <div className="avatar">
-            <img src="/user.png" alt="avatar" />
+            <img src={`${process.env.PUBLIC_URL}/user.png`} alt="avatar" />
           </div>
           <div className="user-greeting">
             <p>Добро пожаловать!</p>

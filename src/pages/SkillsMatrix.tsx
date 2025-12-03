@@ -23,7 +23,9 @@ const SkillsMatrix: React.FC = () => {
       try {
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
-        const response = await fetch("/api/skills-matrix.json");
+        const response = await fetch(
+          process.env.PUBLIC_URL + "/api/skills-matrix.json"
+        );
 
         if (!response.ok) {
           throw new Error("Не удалось загрузить данные");
@@ -103,7 +105,7 @@ const SkillsMatrix: React.FC = () => {
       <div className="left-panel-skills">
         <div className="user-skills">
           <div className="avatar-skills">
-            <img src="/user.png" alt="avatar" />
+            <img src={`${process.env.PUBLIC_URL}/user.png`} alt="avatar" />
           </div>
           <div className="user-greeting-skills">
             <p>Добро пожаловать!</p>
