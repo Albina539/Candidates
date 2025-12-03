@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.skills-matrix-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #080611;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Левая панель */
+.left-panel-skills {
+  width: 280px;
+  background: #0d0a1c;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.user-skills {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-greeting-skills {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 10px;
+  color: #ff3877;
+}
+
+.nav-item-skills {
+  display: block;
+  padding: 12px 20px;
+  color: #ff38778d;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.nav-item-skills:hover {
+  background-color: #4c1aff23;
+  color: #ff3877;
+}
+
+.nav-item-skills.active {
+  background-color: #ff387722;
+  color: #ff3877;
+  border-left-color: #ff3877;
+  font-weight: 500;
+}
+
+.logout-btn-skills {
+  padding: 10px 15px;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 160px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  background: linear-gradient(145deg, #ff3877 0%, #ff3019 100%);
+  color: white;
+}
+
+/* Основной контент */
+.main-content-skills {
+  flex: 1;
+  padding: 20px;
+  margin-left: 280px;
+  min-height: 100vh;
+}
+
+.matrix-header {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ff3877;
+}
+
+.matrix-header h1 {
+  color: #ff3877;
+  margin: 0 0 10px 0;
+}
+
+.last-updated {
+  color: #ff3877;
+  font-size: 14px;
+}
+
+/* Контролы */
+.controls-section-skills {
+  background: #0d0a1c;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-filter label {
+  color: #ff3877;
+}
+
+.category-select {
+  padding: 8px 12px;
+  border: 2px solid #ff3877;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 150px;
+  color: #ff3877;
+  background-color: #080611;
+}
+
+/* Таблица */
+.matrix-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th-skills,
+.td-skills {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ff3877;
+}
+
+.th-skills {
+  background-color: #080611;
+  color: #ff3877;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Стили для строк с разными gap */
+.gap-critical {
+  color: #ff5010;
+}
+
+.gap-low {
+  color: #10ff58;
+}
+
+.skill-category {
+  font-size: 14px;
+}
+
+.level-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.level-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.level-description {
+  font-size: 12px;
+}
+
+.skill-description {
+  font-size: 14px;
+  max-width: 300px;
+}
+
+/* Загрузка и ошибки */
+.loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 18px;
+  color: #ff3877;
+  background: #0d0a1c;
+  border-radius: 12px;
+}
+
+.error-message {
+  text-align: center;
+  padding: 40px;
+  background: #0d0a1c;
+  border-radius: 12px;
+  color: #ff3877;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #ff3877;
+  font-style: italic;
+}

@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.interview-detail-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #080611;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Используем те же стили для левой панели как в Dashboard */
+.left-panel-interview {
+  width: 280px;
+  background: #0d0a1c;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.user-interview {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-greeting-interview {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ff3877;
+}
+
+.back-btn-interview {
+  padding: 10px 15px;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  background: linear-gradient(145deg, #ff3877 0%, #ff3019 100%);
+  color: white;
+}
+
+/* Основной контент */
+.main-content-interview {
+  flex: 1;
+  padding: 20px;
+  margin-left: 280px;
+  min-height: 100vh;
+}
+
+.interview-header {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ff3877;
+}
+
+.header-info h1 {
+  color: #ff3877;
+  margin: 0 0 15px 0;
+  font-size: 28px;
+}
+
+.interview-meta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.date {
+  color: #ff3877;
+  font-size: 14px;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.status.завершено {
+  background: rgba(18, 128, 33, 0.1);
+  color: #22cb49;
+}
+
+.status.запланировано {
+  background: rgba(223, 140, 16, 0.1);
+  color: #ff5010;
+}
+
+.total-score {
+  background: rgba(18, 128, 33, 0.1);
+  color: #22cb49;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Блоки интервью */
+.blocks-section {
+  background: #0d0a1c;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.blocks-section h2 {
+  color: #ff3877;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.block-card {
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(
+    145deg,
+    rgba(153, 0, 255, 0.079) 0%,
+    rgba(6, 1, 30, 0.363) 100%
+  );
+  border-top: 1px solid rgba(201, 79, 242, 0.4);
+  border-left: 1px solid rgba(201, 79, 242, 0.4);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.block-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(209, 2, 251, 0.43);
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ff3877;
+}
+
+.block-header h3 {
+  margin: 0;
+  color: #ff3877;
+  font-size: 18px;
+}
+
+.block-score {
+  text-align: right;
+}
+
+.score-value {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff3877;
+}
+
+.score-percentage {
+  font-size: 14px;
+  color: #22cb49;
+}
+
+.recommendations h4 {
+  color: #ff5010;
+  margin: 15px 0 10px 0;
+  font-size: 16px;
+}
+
+.recommendations ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.recommendations li {
+  margin-bottom: 8px;
+  color: #ff5010;
+  line-height: 1.5;
+}
+
+.upcoming {
+  text-align: center;
+  padding: 20px;
+  color: #ff5010;
+  font-style: italic;
+  background: #080611;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+/* Итоги */
+.summary-section {
+  background: #0d0a1c;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.summary-section h2 {
+  color: #ff3877;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.summary-card {
+  border-radius: 8px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(
+    145deg,
+    rgba(153, 0, 255, 0.079) 0%,
+    rgba(6, 1, 30, 0.363) 100%
+  );
+  border-top: 1px solid rgba(201, 79, 242, 0.4);
+  border-left: 1px solid rgba(201, 79, 242, 0.4);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ff3877;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.summary-item .label {
+  color: #ff3877;
+  font-weight: 500;
+}
+
+.summary-item .value {
+  color: #22cb49;
+  font-size: 16px;
+}
+
+.summary-item .value.status.завершено {
+  background: rgba(18, 128, 33, 0.1);
+  color: #22cb49;
+}
+
+.summary-item .value.status.запланировано {
+  background: rgba(223, 140, 16, 0.1);
+  color: #ff5010;
+}
+
+/* Загрузка и ошибки */
+.loading {
+  text-align: center;
+  padding: 100px;
+  font-size: 18px;
+  color: #ff3877;
+}
+
+.not-found {
+  text-align: center;
+  padding: 100px;
+}
+
+.not-found h2 {
+  color: #ff3877;
+  margin-bottom: 20px;
+}
