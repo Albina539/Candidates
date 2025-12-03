@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthState } from "../types/auth";
 import { SkillsMatrixItem } from "../types/skills";
 import "../styles/SkillMatrix.css";
@@ -9,6 +9,8 @@ const SkillsMatrix: React.FC = () => {
   const authState: AuthState = storedAuth
     ? JSON.parse(storedAuth)
     : { isAuthenticated: false, userEmail: "" };
+
+  const navigate = useNavigate();
 
   const [skills, setSkills] = useState<SkillsMatrixItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -87,7 +89,7 @@ const SkillsMatrix: React.FC = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("authState");
-    window.location.href = "/login";
+    navigate("/login");
   };
 
   const categories = [

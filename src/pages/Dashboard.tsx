@@ -82,7 +82,7 @@ const Dashboard: React.FC = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("authState");
-    window.location.href = "/login";
+    navigate("/login");
   };
 
   const formatDate = (dateString: string) => {
