@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Albina539/Candidates.git/static/css/main.be8bef4e.css",
+    "main.js": "/Albina539/Candidates.git/static/js/main.a3ad2cae.js",
+    "static/media/Login.svg": "/Albina539/Candidates.git/static/media/Login.11de9ec5b7a2bbaa6c64.svg",
+    "index.html": "/Albina539/Candidates.git/index.html",
+    "main.be8bef4e.css.map": "/Albina539/Candidates.git/static/css/main.be8bef4e.css.map",
+    "main.a3ad2cae.js.map": "/Albina539/Candidates.git/static/js/main.a3ad2cae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be8bef4e.css",
+    "static/js/main.a3ad2cae.js"
+  ]
+}
