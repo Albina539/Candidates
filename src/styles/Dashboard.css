@@ -237,3 +237,273 @@ table {
   color: #ff3877;
   font-style: italic;
 }
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+  .left-panel {
+    width: 220px;
+  }
+
+  .main-content {
+    margin-left: 220px;
+    padding: 15px;
+  }
+
+  .logout-btn {
+    margin-right: 100px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .user-greeting {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .role-selector {
+    gap: 15px;
+  }
+
+  .role-dropdown {
+    min-width: 200px;
+  }
+
+  .save-role-btn {
+    padding: 10px 12px;
+  }
+
+  .role-section,
+  .interviews-section {
+    padding: 20px;
+  }
+
+  .th-dashboard,
+  .td-dashboard {
+    padding: 10px 12px;
+  }
+}
+
+/* Большие телефоны (576px - 768px) */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .user {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    gap: 15px;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-greeting {
+    margin-bottom: 0;
+    gap: 5px;
+  }
+
+  .left-panel-nav {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .nav-item {
+    padding: 10px 15px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .nav-item.active {
+    border-left-color: transparent;
+    border-bottom-color: #ff3877;
+  }
+
+  .logout-btn {
+    margin: 10px auto 0;
+    width: calc(100% - 30px);
+    max-width: 300px;
+  }
+
+  .role-selector {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .role-dropdown {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .save-role-btn {
+    width: 100%;
+  }
+
+  .dashboard-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 24px;
+  }
+
+  .role-section h2,
+  .interviews-section h2 {
+    font-size: 18px;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
+
+/* Телефоны (до 576px) */
+@media (max-width: 576px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  .left-panel {
+    padding: 10px 0;
+  }
+
+  .user {
+    padding: 0 10px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-greeting p {
+    font-size: 14px;
+  }
+
+  .user-name {
+    font-size: 12px;
+  }
+
+  .nav-item {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .logout-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-top: 15px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 20px;
+  }
+
+  .role-section,
+  .interviews-section {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .role-section h2,
+  .interviews-section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .role-dropdown {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .save-role-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .th-dashboard,
+  .td-dashboard {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .status {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+
+  .loading,
+  .no-interviews {
+    padding: 30px 15px;
+    font-size: 14px;
+  }
+
+  .interview-table {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+}
+
+/* Очень маленькие телефоны (до 360px) */
+@media (max-width: 360px) {
+  .user {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .user-greeting {
+    align-items: center;
+  }
+
+  .left-panel-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dashboard-header h1 {
+    font-size: 18px;
+  }
+
+  .role-dropdown {
+    font-size: 13px;
+  }
+
+  .th-dashboard,
+  .td-dashboard {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+
+  table {
+    min-width: 500px;
+  }
+}

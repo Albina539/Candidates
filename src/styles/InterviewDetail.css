@@ -291,3 +291,321 @@ img {
   color: #ff3877;
   margin-bottom: 20px;
 }
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+  .left-panel-interview {
+    width: 220px;
+  }
+
+  .main-content-interview {
+    margin-left: 220px;
+    padding: 15px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .user-greeting-interview {
+    font-size: 14px;
+  }
+
+  .blocks-section,
+  .summary-section {
+    padding: 20px;
+  }
+
+  .blocks-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+  }
+
+  .header-info h1 {
+    font-size: 24px;
+  }
+
+  .blocks-section h2,
+  .summary-section h2 {
+    font-size: 20px;
+  }
+}
+
+/* Большие телефоны (576px - 768px) */
+@media (max-width: 768px) {
+  .interview-detail-container {
+    flex-direction: column;
+  }
+
+  .left-panel-interview {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    margin-bottom: 0;
+  }
+
+  .main-content-interview {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .user-interview {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    gap: 15px;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-greeting-interview {
+    gap: 5px;
+  }
+
+  .back-btn-interview {
+    margin: 15px auto 0;
+    width: calc(100% - 30px);
+    max-width: 300px;
+    display: block;
+  }
+
+  .interview-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  .header-info h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .interview-meta {
+    gap: 10px;
+  }
+
+  .blocks-section,
+  .summary-section {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .blocks-section h2,
+  .summary-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .blocks-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .block-card {
+    padding: 15px;
+  }
+
+  .block-header h3 {
+    font-size: 16px;
+  }
+
+  .score-value {
+    font-size: 18px;
+  }
+
+  .score-percentage {
+    font-size: 12px;
+  }
+
+  .recommendations h4 {
+    font-size: 14px;
+  }
+
+  .recommendations li {
+    font-size: 13px;
+  }
+
+  .summary-card {
+    padding: 15px;
+  }
+
+  .summary-item {
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .summary-item .label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .summary-item .value {
+    font-size: 14px;
+  }
+
+  .loading,
+  .not-found {
+    padding: 60px 15px;
+  }
+}
+
+/* Телефоны (до 576px) */
+@media (max-width: 576px) {
+  .main-content-interview {
+    padding: 10px;
+  }
+
+  .left-panel-interview {
+    padding: 10px 0;
+  }
+
+  .user-interview {
+    padding: 0 10px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-greeting-interview p {
+    font-size: 14px;
+  }
+
+  .user-name-interview {
+    font-size: 12px;
+  }
+
+  .back-btn-interview {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-top: 10px;
+  }
+
+  .header-info h1 {
+    font-size: 20px;
+  }
+
+  .interview-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .date,
+  .status,
+  .total-score {
+    font-size: 12px;
+  }
+
+  .blocks-section,
+  .summary-section {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .blocks-section h2,
+  .summary-section h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .block-card {
+    padding: 12px;
+  }
+
+  .block-header h3 {
+    font-size: 15px;
+  }
+
+  .score-value {
+    font-size: 16px;
+  }
+
+  .score-percentage {
+    font-size: 11px;
+  }
+
+  .recommendations h4 {
+    font-size: 13px;
+    margin: 10px 0 8px 0;
+  }
+
+  .recommendations li {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .upcoming {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .summary-card {
+    padding: 12px;
+  }
+
+  .summary-item .label {
+    font-size: 13px;
+  }
+
+  .summary-item .value {
+    font-size: 13px;
+  }
+
+  .loading,
+  .not-found {
+    padding: 40px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Очень маленькие телефоны (до 360px) */
+@media (max-width: 360px) {
+  .user-interview {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .user-greeting-interview {
+    align-items: center;
+  }
+
+  .header-info h1 {
+    font-size: 18px;
+  }
+
+  .blocks-grid {
+    gap: 10px;
+  }
+
+  .block-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .block-score {
+    align-self: flex-end;
+  }
+
+  .score-value {
+    font-size: 15px;
+  }
+
+  .summary-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .back-btn-interview {
+    width: calc(100% - 20px);
+  }
+}
