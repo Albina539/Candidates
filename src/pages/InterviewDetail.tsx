@@ -259,7 +259,10 @@ const InterviewDetails: React.FC = () => {
   if (isLoading) {
     return (
       <div className="interview-detail-container">
-        <div className="loading">Загрузка деталей интервью...</div>
+        <div className="loading-spinner-container-interview">
+          <div className="loading-spinner-interview"></div>
+          <p className="loading-text-interview">Загрузка...</p>
+        </div>
       </div>
     );
   }

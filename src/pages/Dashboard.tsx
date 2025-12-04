@@ -151,7 +151,10 @@ const Dashboard: React.FC = () => {
           <div className="interviews-section">
             <h2>Мои интервью</h2>
             {isLoading ? (
-              <div className="loading">Загрузка...</div>
+              <div className="loading-spinner-container">
+                <div className="loading-spinner"></div>
+                <p className="loading-text">Загрузка...</p>
+              </div>
             ) : (
               <div className="interview-table">
                 <table>

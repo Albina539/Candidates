@@ -225,10 +225,32 @@ table {
   color: #ff5010;
 }
 
-.loading {
-  text-align: center;
-  padding: 40px;
-  color: #7f8c8d;
+.loading-spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 56, 119, 0.2);
+  border-top-color: #ff3877;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  color: #ff3877;
+  font-size: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .no-interviews {
@@ -247,6 +269,7 @@ table {
   .main-content {
     margin-left: 220px;
     padding: 15px;
+    min-height: 100vh;
   }
 
   .logout-btn {
@@ -303,6 +326,7 @@ table {
   .main-content {
     margin-left: 0;
     padding: 15px;
+    min-height: 100vh;
   }
 
   .user {
@@ -384,6 +408,7 @@ table {
 @media (max-width: 576px) {
   .main-content {
     padding: 10px;
+    min-height: 100vh;
   }
 
   .left-panel {
@@ -455,7 +480,6 @@ table {
     font-size: 12px;
   }
 
-  .loading,
   .no-interviews {
     padding: 30px 15px;
     font-size: 14px;

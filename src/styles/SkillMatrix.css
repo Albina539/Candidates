@@ -196,13 +196,32 @@ table {
 }
 
 /* Загрузка и ошибки */
-.loading {
-  text-align: center;
+.loading-spinner-container-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 60px;
-  font-size: 18px;
+}
+
+.loading-spinner-skills {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 56, 119, 0.2);
+  border-top-color: #ff3877;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text-skills {
   color: #ff3877;
-  background: #0d0a1c;
-  border-radius: 12px;
+  font-size: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .error-message {
@@ -405,7 +424,6 @@ table {
     word-break: break-word;
   }
 
-  .loading,
   .error-message,
   .no-data {
     padding: 40px 15px;
@@ -504,7 +522,6 @@ table {
     max-width: 120px;
   }
 
-  .loading,
   .error-message,
   .no-data {
     padding: 30px 10px;

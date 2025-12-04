@@ -152,7 +152,10 @@ const SkillsMatrix: React.FC = () => {
             </div>
 
             {isLoading ? (
-              <div className="loading">Загрузка матрицы навыков...</div>
+              <div className="loading-spinner-container-skills">
+                <div className="loading-spinner-skills"></div>
+                <p className="loading-text-skills">Загрузка...</p>
+              </div>
             ) : error ? (
               <div className="error-message">
                 <p>{error}</p>
