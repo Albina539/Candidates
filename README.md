@@ -47,4 +47,4 @@
 
 https://albina539.github.io/Candidates/
 
-Я опубликовала проект на Github Page
+Я опубликовала проект на Github Page. Можно открыть его по ссылке выше
